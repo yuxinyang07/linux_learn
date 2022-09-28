@@ -1,5 +1,5 @@
 ARCH=arm64
-#MVTOOL_PREFIX= /home/rk3399/work/SSR920/gcc-sigmastar-9.1.0-2020.07-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc
+CURRENT_PATH=$(shell pwd)
 MVTOOL_PREFIX=aarch64-linux-gnu-gcc
 CROSS_COMPILE= $(MVTOOL_PREFIX)
 ENV:=ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
@@ -13,4 +13,4 @@ PWD :=$(shell pwd)
 all:
 	$(MAKE) $(ENV)  -C $(KDIR)  M=$(PWD) modules
 clean:
-	rm *o  
+	make -C $(KDIR) M=$(CURRENT_PATH) clean 

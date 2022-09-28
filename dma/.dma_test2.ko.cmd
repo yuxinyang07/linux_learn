@@ -1,1 +1,0 @@
-cmd_/home/rk3399/learn/dma/dma_test2.ko := aarch64-linux-gnu-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/rk3399/learn/dma/dma_test2.ko /home/rk3399/learn/dma/dma_test2.o /home/rk3399/learn/dma/dma_test2.mod.o ;  true
