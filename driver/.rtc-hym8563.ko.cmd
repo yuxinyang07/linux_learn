@@ -1,0 +1,1 @@
+cmd_/home/rk3399/learn/driver/rtc-hym8563.ko := aarch64-linux-gnu-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/rk3399/learn/driver/rtc-hym8563.ko /home/rk3399/learn/driver/rtc-hym8563.o /home/rk3399/learn/driver/rtc-hym8563.mod.o ;  true

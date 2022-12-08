@@ -1,0 +1,18 @@
+menu "Heygears Drivers"
+
+config HEYGEARS_DRIVERS
+    bool "Heygears device drivers"
+    default y
+
+config HEYGEARS_SDIO_FPGA
+    tristate "Heygears SDIO FPGA Communication"
+    depends on HEYGEARS_DRIVERS
+    default y
+
+config HEYGEARS_FPGA_CMD
+    tristate "Heygears SPI FPGA command control"
+    depends on HEYGEARS_DRIVERS
+    default y
+
+endmenu
+

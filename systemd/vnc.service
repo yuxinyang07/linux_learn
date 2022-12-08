@@ -1,0 +1,15 @@
+#start
+[Unit]
+Description=vnc service
+After=network.target
+
+[Service]
+Type=forking
+Restart=always
+RestartSec=5
+ExecStart=/home/heygears/start_vnc.sh
+
+
+[Install]
+WantedBy=multi-user.target
+

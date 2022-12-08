@@ -61,7 +61,7 @@ void  callback_func(void *arg)
 //    for(i = 0;i < 100 ;i ++){
 //        printk("su1 =%x su2 =%x \n",su1[i],su2[i]);
 //    }
-
+    dump_stack();
     if(!cmp(su1,su2)){
         printk("src copy success \n");
     }else{

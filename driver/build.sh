@@ -1,0 +1,1 @@
+aarch64-linux-gnu-g++  -I/home/rk3399/work/tina_r818/out/r818-evb2/staging_dir/target/usr/include/opencv4   --sysroot=/home/rk3399/work/tina_r818/out/r818-evb2/staging_dir/target -o sdio_fpga_test   sdio_fpga_test.c    -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_videoio  -lopencv_imgcodecs  -ldl -lpthread -lrt

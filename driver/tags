@@ -1,0 +1,357 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADC0_DATA_INT_SET	heygears_lradc.h	/^	ADC0_DATA_INT_SET = (1<<2),$/;"	e	enum:int_mode
+ADC0_DOWN_INT_SET	heygears_lradc.h	/^	ADC0_DOWN_INT_SET = (1<<0),$/;"	e	enum:int_mode
+ADC0_UP_INT_SET	heygears_lradc.h	/^	ADC0_UP_INT_SET = (1<<1),$/;"	e	enum:int_mode
+ADC_CHAN_SELECT	heygears_lradc.h	33;"	d
+ADC_CHAN_SET	heygears_lradc.h	/^	ADC_CHAN_SET = (1<<1),$/;"	e	enum:key_mode
+ARCH	Makefile	/^ARCH=arm64$/;"	m
+BIT_STATUS_DR	heygears_sdio_fpga.c	32;"	d	file:
+BIT_STATUS_THRE	heygears_sdio_fpga.c	34;"	d	file:
+CHAN	heygears_lradc.h	32;"	d
+CONCERT_DLY_SET	heygears_lradc.h	/^	CONCERT_DLY_SET = (1<<0),$/;"	e	enum:key_mode
+CROSS_COMPILE	Makefile	/^CROSS_COMPILE= $(MVTOOL_PREFIX)$/;"	m
+DEBUG	goodix.c	39;"	d	file:
+DRIVER_NAME	heygears_spi_fpga.c	37;"	d	file:
+ENV	Makefile	/^ENV:=ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-$/;"	m
+EXEC	Makefile	/^EXEC = $(TARGET)$/;"	m
+FIFO_SIZE	heygears_sdio_fpga.c	38;"	d	file:
+FIRST_CONCERT_DLY	heygears_lradc.h	31;"	d
+FPAG_CMD_CNT	heygears_fpga_cmd.c	21;"	d	file:
+FPAG_CMD_NAME	heygears_fpga_cmd.c	22;"	d	file:
+FPGA_FIRMWARE_PATH	heygears_spi_fpga.c	40;"	d	file:
+GOODIX_CMD_SCREEN_OFF	goodix.c	76;"	d	file:
+GOODIX_CONFIG_911_LENGTH	goodix.c	71;"	d	file:
+GOODIX_CONFIG_967_LENGTH	goodix.c	72;"	d	file:
+GOODIX_CONFIG_MAX_LENGTH	goodix.c	70;"	d	file:
+GOODIX_CONTACT_SIZE	goodix.c	67;"	d	file:
+GOODIX_GPIO_INT_NAME	goodix.c	61;"	d	file:
+GOODIX_GPIO_RST_NAME	goodix.c	62;"	d	file:
+GOODIX_INT_TRIGGER	goodix.c	66;"	d	file:
+GOODIX_MAX_CONTACTS	goodix.c	68;"	d	file:
+GOODIX_MAX_HEIGHT	goodix.c	64;"	d	file:
+GOODIX_MAX_WIDTH	goodix.c	65;"	d	file:
+GOODIX_READ_COOR_ADDR	goodix.c	78;"	d	file:
+GOODIX_REG_COMMAND	goodix.c	75;"	d	file:
+GOODIX_REG_CONFIG_DATA	goodix.c	79;"	d	file:
+GOODIX_REG_ID	goodix.c	80;"	d	file:
+HEYGEARS_SDIO_BUS_NUM	heygears_sdio_fpga.c	19;"	d	file:
+INPUT_DEV_NAME	heygears_lradc.h	21;"	d
+ISC_DISABLE	heygears_spi_fpga.h	23;"	d
+ISC_ENABLE	heygears_spi_fpga.h	24;"	d
+ISC_ERASE	heygears_spi_fpga.h	22;"	d
+KDIR	Makefile	/^KDIR := \/home\/rk3399\/work\/tina_r818\/lichee\/linux-4.9$/;"	m
+KEY_MAX_CNT	heygears_lradc.h	23;"	d
+KEY_MODE_SELECT	heygears_lradc.h	35;"	d
+KEY_MODE_SET	heygears_lradc.h	/^	KEY_MODE_SET = (1<<2),$/;"	e	enum:key_mode
+LEVELB_VOL	heygears_lradc.h	38;"	d
+LEVELB_VOL_SET	heygears_lradc.h	/^	LEVELB_VOL_SET = (1<<4),$/;"	e	enum:key_mode
+LRADC_ADC0_DATAPEND	heygears_lradc.h	60;"	d
+LRADC_ADC0_DATA_EN	heygears_lradc.h	51;"	d
+LRADC_ADC0_DOWNPEND	heygears_lradc.h	59;"	d
+LRADC_ADC0_DOWN_EN	heygears_lradc.h	50;"	d
+LRADC_ADC0_UPPEND	heygears_lradc.h	58;"	d
+LRADC_ADC0_UP_EN	heygears_lradc.h	49;"	d
+LRADC_ADC1_DATAPEND	heygears_lradc.h	55;"	d
+LRADC_ADC1_DATA_EN	heygears_lradc.h	47;"	d
+LRADC_ADC1_DOWNPEND	heygears_lradc.h	54;"	d
+LRADC_ADC1_DOWN_EN	heygears_lradc.h	46;"	d
+LRADC_ADC1_UPPEND	heygears_lradc.h	53;"	d
+LRADC_ADC1_UP_EN	heygears_lradc.h	45;"	d
+LRADC_CTRL	heygears_lradc.h	25;"	d
+LRADC_DATA0	heygears_lradc.h	28;"	d
+LRADC_DATA1	heygears_lradc.h	29;"	d
+LRADC_EN	heygears_lradc.h	43;"	d
+LRADC_EN_SET	heygears_lradc.h	/^	LRADC_EN_SET = (1<<6),$/;"	e	enum:key_mode
+LRADC_HOLD_EN	heygears_lradc.h	37;"	d
+LRADC_HOLD_KEY_EN	heygears_lradc.h	36;"	d
+LRADC_HOLD_SET	heygears_lradc.h	/^	LRADC_HOLD_SET = (1<<3),$/;"	e	enum:key_mode
+LRADC_INTC	heygears_lradc.h	26;"	d
+LRADC_INT_STA	heygears_lradc.h	27;"	d
+LRADC_KEY_MODE	heygears_lradc.h	34;"	d
+LRADC_SAMPLE_125HZ	heygears_lradc.h	41;"	d
+LRADC_SAMPLE_250HZ	heygears_lradc.h	42;"	d
+LRADC_SAMPLE_32HZ	heygears_lradc.h	39;"	d
+LRADC_SAMPLE_62HZ	heygears_lradc.h	40;"	d
+LRADC_SAMPLE_SET	heygears_lradc.h	/^	LRADC_SAMPLE_SET = (1<<5),$/;"	e	enum:key_mode
+LSC_BITSTREAM_BURST	heygears_spi_fpga.h	19;"	d
+LSC_ENABLE_X	heygears_spi_fpga.h	18;"	d
+LSC_INIT_ADDR	heygears_spi_fpga.h	17;"	d
+LSC_READ_IDCODE	heygears_spi_fpga.h	15;"	d
+LSC_READ_STATUS	heygears_spi_fpga.h	16;"	d
+LSC_READ_USERCODE	heygears_spi_fpga.h	20;"	d
+MAPLEN	heygears_sdio_fpga.c	22;"	d	file:
+MAP_PAGE_COUNT	heygears_sdio_fpga.c	21;"	d	file:
+MAX_CONTACTS_LOC	goodix.c	83;"	d	file:
+MODE_0V2	heygears_lradc.h	63;"	d
+MVTOOL_PREFIX	Makefile	/^MVTOOL_PREFIX=aarch64-linux-gnu-gcc$/;"	m
+MY_REG_RX	heygears_sdio_fpga.c	28;"	d	file:
+MY_REG_STATUS	heygears_sdio_fpga.c	30;"	d	file:
+MY_REG_TX	heygears_sdio_fpga.c	29;"	d	file:
+ONE_CHANNEL	heygears_lradc.h	62;"	d
+PWD	Makefile	/^PWD :=$(shell pwd)$/;"	m
+REPORT_KEY_LOW_LIMIT_COUNT	heygears_lradc.h	69;"	d
+RESOLUTION_LOC	goodix.c	82;"	d	file:
+RETRY_COUNT	heygears_spi_fpga.c	41;"	d	file:
+SPI_CS_NOSELECT	heygears_spi_fpga.h	12;"	d
+SPI_CS_SELECT	heygears_spi_fpga.h	11;"	d
+SPI_GPIO_NO_MISO	heygears_spi_fpga.h	6;"	d
+SPI_GPIO_NO_MOSI	heygears_spi_fpga.h	7;"	d
+SPI_GPIO_NO_NCS	heygears_spi_fpga.h	5;"	d
+SPI_GPIO_NO_SCK	heygears_spi_fpga.h	8;"	d
+SUNXI_KEYBOARD_H	heygears_lradc.h	19;"	d
+SUNXI_NTC_PM_OPS	heygears_lradc_ntc.c	389;"	d	file:
+TARGET	Makefile	/^TARGET= heygears_sdio_fpga$/;"	m
+TRIGGER_LOC	goodix.c	84;"	d	file:
+UART_NR	heygears_sdio_fpga.c	36;"	d	file:
+UPDATEING	heygears_spi_fpga.c	/^    UPDATEING,          \/\/升级中$/;"	e	enum:__anon2	file:
+UPDATEING_RETRY	heygears_spi_fpga.c	/^    UPDATEING_RETRY,    \/\/升级失败重试中$/;"	e	enum:__anon2	file:
+UPDATE_FAILED	heygears_spi_fpga.c	/^    UPDATE_FAILED,      \/\/升级失败$/;"	e	enum:__anon2	file:
+UPDATE_SUCCESS	heygears_spi_fpga.c	/^    UPDATE_SUCCESS = 0, \/\/升级完成$/;"	e	enum:__anon2	file:
+WAKEUP_CHARS	heygears_sdio_fpga.c	39;"	d	file:
+__HEYGEARS_SPI_FPGA_H__	heygears_spi_fpga.h	2;"	d
+__this_module	goodix.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__this_module	heygears_fpga_cmd.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__this_module	heygears_lradc_ntc.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__this_module	heygears_sdio_fpga.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__this_module	heygears_spi_fpga.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	goodix.mod.c	/^__used$/;"	v	file:
+__used	heygears_fpga_cmd.mod.c	/^__used$/;"	v	file:
+__used	heygears_lradc_ntc.mod.c	/^__used$/;"	v	file:
+__used	heygears_sdio_fpga.mod.c	/^__used$/;"	v	file:
+__used	heygears_spi_fpga.mod.c	/^__used$/;"	v	file:
+abs_x_max	goodix.c	/^	int abs_x_max;$/;"	m	struct:goodix_ts_data	file:
+abs_y_max	goodix.c	/^	int abs_y_max;$/;"	m	struct:goodix_ts_data	file:
+adc_val	heygears_lradc_ntc.c	/^    uint16_t adc_val;$/;"	m	struct:sunxi_ntc_data	file:
+c_dev	heygears_sdio_fpga.c	/^    struct cdev c_dev;$/;"	m	struct:sdio_uart_port	typeref:struct:sdio_uart_port::cdev	file:
+ccflags-y	Makefile	/^ccflags-y = -DDEBUG -g -std=gnu99 -Werror -Wno-declaration-after-statement -Wframe-larger-than=1000000000$/;"	m
+cdev	heygears_fpga_cmd.c	/^    struct cdev cdev;			\/* cdev *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::cdev	file:
+cdev	heygears_lradc_ntc.c	/^    struct cdev cdev;       		\/* cdev   *\/$/;"	m	struct:sunxi_ntc_data	typeref:struct:sunxi_ntc_data::cdev	file:
+cdev	heygears_spi_fpga.c	/^    struct cdev *cdev;$/;"	m	struct:spi_fpga_dev	typeref:struct:spi_fpga_dev::cdev	file:
+cfg_len	goodix.c	/^	int cfg_len;$/;"	m	struct:goodix_ts_data	file:
+cfg_name	goodix.c	/^	const char *cfg_name;$/;"	m	struct:goodix_ts_data	file:
+check_fpga_update_sccess	heygears_spi_fpga.c	/^static int check_fpga_update_sccess(struct spi_fpga_dev *spi_fpga)$/;"	f	file:
+class	heygears_fpga_cmd.c	/^    struct class* class;		\/* 类 *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::class	file:
+class	heygears_lradc_ntc.c	/^    struct class *class;    		\/* 类     *\/$/;"	m	struct:sunxi_ntc_data	typeref:struct:sunxi_ntc_data::class	file:
+client	goodix.c	/^	struct i2c_client *client;$/;"	m	struct:goodix_ts_data	typeref:struct:goodix_ts_data::i2c_client	file:
+client	goodix.c	/^    struct i2c_client *client;$/;"	m	struct:goodix_ts_work	typeref:struct:goodix_ts_work::i2c_client	file:
+debug_info	heygears_sdio_fpga.c	/^static bool debug_info = false;             \/* 调试信息 *\/$/;"	v	file:
+device	heygears_fpga_cmd.c	/^    struct device* device;		\/* 设备 *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::device	file:
+device	heygears_lradc_ntc.c	/^    struct device *device;  		\/* 设备   *\/$/;"	m	struct:sunxi_ntc_data	typeref:struct:sunxi_ntc_data::device	file:
+devid	heygears_fpga_cmd.c	/^    dev_t devid;				\/* 设备号 *\/$/;"	m	struct:__anon1	file:
+devid	heygears_lradc_ntc.c	/^    dev_t devid;            		\/* 设备号 *\/$/;"	m	struct:sunxi_ntc_data	file:
+devid	heygears_spi_fpga.c	/^    dev_t devid;$/;"	m	struct:spi_fpga_dev	file:
+disc	heygears_lradc_ntc.c	/^	struct sunxi_adc_disc *disc;$/;"	m	struct:sunxi_ntc_data	typeref:struct:sunxi_ntc_data::sunxi_adc_disc	file:
+disc_1200	heygears_lradc_ntc.c	/^static struct sunxi_adc_disc disc_1200 = {$/;"	v	typeref:struct:sunxi_adc_disc	file:
+disc_1350	heygears_lradc_ntc.c	/^static struct sunxi_adc_disc disc_1350 = {$/;"	v	typeref:struct:sunxi_adc_disc	file:
+disc_2000	heygears_lradc_ntc.c	/^static struct sunxi_adc_disc disc_2000 = {$/;"	v	typeref:struct:sunxi_adc_disc	file:
+done	heygears_spi_fpga.h	/^    unsigned long   done;$/;"	m	struct:spi_fpga_gpio
+file_dev	heygears_sdio_fpga.c	/^    struct device* file_dev;$/;"	m	struct:sdio_uart_port	typeref:struct:sdio_uart_port::device	file:
+firmware_loading_complete	goodix.c	/^	struct completion firmware_loading_complete;$/;"	m	struct:goodix_ts_data	typeref:struct:goodix_ts_data::completion	file:
+fpga_cmd_dev	heygears_fpga_cmd.c	/^static fpga_cmd_dev_t fpga_cmd_dev = {0};$/;"	v	file:
+fpga_cmd_dev_t	heygears_fpga_cmd.c	/^}fpga_cmd_dev_t;$/;"	t	typeref:struct:__anon1	file:
+fpga_cmd_driver	heygears_fpga_cmd.c	/^static struct spi_driver fpga_cmd_driver = {$/;"	v	typeref:struct:spi_driver	file:
+fpga_cmd_exit	heygears_fpga_cmd.c	/^module_exit(fpga_cmd_exit);$/;"	v
+fpga_cmd_exit	heygears_fpga_cmd.c	/^static void __exit fpga_cmd_exit(void)$/;"	f	file:
+fpga_cmd_id	heygears_fpga_cmd.c	/^static const struct spi_device_id fpga_cmd_id[] = {$/;"	v	typeref:struct:spi_device_id	file:
+fpga_cmd_init	heygears_fpga_cmd.c	/^module_init(fpga_cmd_init);$/;"	v
+fpga_cmd_init	heygears_fpga_cmd.c	/^static int __init fpga_cmd_init(void)$/;"	f	file:
+fpga_cmd_llseek	heygears_fpga_cmd.c	/^loff_t fpga_cmd_llseek(struct file* filp, loff_t off, int whence)$/;"	f
+fpga_cmd_of_match	heygears_fpga_cmd.c	/^static const struct of_device_id fpga_cmd_of_match[] = {$/;"	v	typeref:struct:of_device_id	file:
+fpga_cmd_open	heygears_fpga_cmd.c	/^static int fpga_cmd_open(struct inode* inode, struct file* filp)$/;"	f	file:
+fpga_cmd_ops	heygears_fpga_cmd.c	/^static const struct file_operations fpga_cmd_ops = {$/;"	v	typeref:struct:file_operations	file:
+fpga_cmd_probe	heygears_fpga_cmd.c	/^static int fpga_cmd_probe(struct spi_device* spi)$/;"	f	file:
+fpga_cmd_read	heygears_fpga_cmd.c	/^static ssize_t fpga_cmd_read(struct file* filp, char __user* buf, size_t cnt, loff_t* off)$/;"	f	file:
+fpga_cmd_release	heygears_fpga_cmd.c	/^static int fpga_cmd_release(struct inode* inode, struct file* filp)$/;"	f	file:
+fpga_cmd_remove	heygears_fpga_cmd.c	/^static int fpga_cmd_remove(struct spi_device* spi)$/;"	f	file:
+fpga_cmd_write	heygears_fpga_cmd.c	/^ssize_t fpga_cmd_write(struct file* filp, const char __user* buf, size_t cnt, loff_t* off)$/;"	f
+fpga_dev_class	heygears_spi_fpga.c	/^    struct class *fpga_dev_class;$/;"	m	struct:spi_fpga_dev	typeref:struct:spi_fpga_dev::class	file:
+fpga_fasync	heygears_spi_fpga.c	/^struct fasync_struct *fpga_fasync; \/\/异步信号结构体变量$/;"	v	typeref:struct:fasync_struct
+fpga_fops	heygears_spi_fpga.c	/^static struct file_operations fpga_fops = {$/;"	v	typeref:struct:file_operations	file:
+fpga_open	heygears_spi_fpga.c	/^static int fpga_open(struct inode* inode,struct file * file)$/;"	f	file:
+fpga_status_read	heygears_spi_fpga.c	/^ssize_t fpga_status_read(struct file *file,char __user *buf,size_t size,loff_t *ppos)$/;"	f
+fpga_update_fasync	heygears_spi_fpga.c	/^static int fpga_update_fasync(int fd,struct file *file,int on)$/;"	f	file:
+fpga_update_status	heygears_spi_fpga.c	/^}fpga_update_status;$/;"	t	typeref:enum:__anon2	file:
+func	heygears_sdio_fpga.c	/^    struct sdio_func* func;$/;"	m	struct:sdio_uart_port	typeref:struct:sdio_uart_port::sdio_func	file:
+func_lock	heygears_sdio_fpga.c	/^    struct mutex		func_lock;$/;"	m	struct:sdio_uart_port	typeref:struct:sdio_uart_port::mutex	file:
+fw_data	heygears_spi_fpga.c	/^    uint8_t *fw_data;$/;"	m	struct:spi_fpga_dev	file:
+getmiso	heygears_spi_fpga.c	/^static inline int getmiso(struct spi_fpga_gpio *spi_gpios)$/;"	f	file:
+goodix_acpi_match	goodix.c	/^static const struct acpi_device_id goodix_acpi_match[] = {$/;"	v	typeref:struct:acpi_device_id	file:
+goodix_check_cfg	goodix.c	/^static int goodix_check_cfg(struct goodix_ts_data *ts,$/;"	f	file:
+goodix_config_cb	goodix.c	/^static void goodix_config_cb(const struct firmware *cfg, void *ctx)$/;"	f	file:
+goodix_configure_dev	goodix.c	/^static int goodix_configure_dev(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_free_irq	goodix.c	/^static void goodix_free_irq(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_get_cfg_len	goodix.c	/^static int goodix_get_cfg_len(u16 id)$/;"	f	file:
+goodix_i2c_read	goodix.c	/^static int goodix_i2c_read(struct i2c_client *client,$/;"	f	file:
+goodix_i2c_test	goodix.c	/^static int goodix_i2c_test(struct i2c_client *client)$/;"	f	file:
+goodix_i2c_write	goodix.c	/^static int goodix_i2c_write(struct i2c_client *client, u16 reg, const u8 *buf,$/;"	f	file:
+goodix_i2c_write_u8	goodix.c	/^static int goodix_i2c_write_u8(struct i2c_client *client, u16 reg, u8 value)$/;"	f	file:
+goodix_int_sync	goodix.c	/^static int goodix_int_sync(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_irq_flags	goodix.c	/^static const unsigned long goodix_irq_flags[] = {$/;"	v	file:
+goodix_of_match	goodix.c	/^static const struct of_device_id goodix_of_match[] = {$/;"	v	typeref:struct:of_device_id	file:
+goodix_process_events	goodix.c	/^static void goodix_process_events(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_read_config	goodix.c	/^static void goodix_read_config(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_read_version	goodix.c	/^static int goodix_read_version(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_request_input_dev	goodix.c	/^static int goodix_request_input_dev(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_request_irq	goodix.c	/^static int goodix_request_irq(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_reset	goodix.c	/^static int goodix_reset(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_resume	goodix.c	/^static int __maybe_unused goodix_resume(struct device *dev)$/;"	f	file:
+goodix_send_cfg	goodix.c	/^static int goodix_send_cfg(struct goodix_ts_data *ts,$/;"	f	file:
+goodix_suspend	goodix.c	/^static int __maybe_unused goodix_suspend(struct device *dev)$/;"	f	file:
+goodix_ts_config	goodix.c	/^static int goodix_ts_config(struct i2c_client *client,$/;"	f	file:
+goodix_ts_data	goodix.c	/^struct goodix_ts_data {$/;"	s	file:
+goodix_ts_driver	goodix.c	/^module_i2c_driver(goodix_ts_driver);$/;"	v
+goodix_ts_driver	goodix.c	/^static struct i2c_driver goodix_ts_driver = {$/;"	v	typeref:struct:i2c_driver	file:
+goodix_ts_id	goodix.c	/^static const struct i2c_device_id goodix_ts_id[] = {$/;"	v	typeref:struct:i2c_device_id	file:
+goodix_ts_irq_handler	goodix.c	/^static irqreturn_t goodix_ts_irq_handler(int irq, void *dev_id)$/;"	f	file:
+goodix_ts_probe	goodix.c	/^static int goodix_ts_probe(struct i2c_client *client,$/;"	f	file:
+goodix_ts_read_input_report	goodix.c	/^static int goodix_ts_read_input_report(struct goodix_ts_data *ts, u8 *data)$/;"	f	file:
+goodix_ts_remove	goodix.c	/^static int goodix_ts_remove(struct i2c_client *client)$/;"	f	file:
+goodix_ts_report_touch	goodix.c	/^static void goodix_ts_report_touch(struct goodix_ts_data *ts, u8 *coor_data)$/;"	f	file:
+goodix_ts_sysfs_deinit	goodix.c	/^static void goodix_ts_sysfs_deinit(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_ts_sysfs_init	goodix.c	/^static int goodix_ts_sysfs_init(struct goodix_ts_data *ts)$/;"	f	file:
+goodix_ts_work	goodix.c	/^struct goodix_ts_work{$/;"	s	file:
+goodix_ts_work_handler	goodix.c	/^static void goodix_ts_work_handler(struct work_struct *pwork)$/;"	f	file:
+gpiod_int	goodix.c	/^	struct gpio_desc *gpiod_int;$/;"	m	struct:goodix_ts_data	typeref:struct:goodix_ts_data::gpio_desc	file:
+gpiod_rst	goodix.c	/^	struct gpio_desc *gpiod_rst;$/;"	m	struct:goodix_ts_data	typeref:struct:goodix_ts_data::gpio_desc	file:
+gtcfg_show	goodix.c	/^ssize_t gtcfg_show(struct device *dev, struct device_attribute *attr, char *buf)$/;"	f
+gtcfg_store	goodix.c	/^ssize_t gtcfg_store(struct device *dev, struct device_attribute *attr, const char *buf, size_t count)$/;"	f
+heygears_class	heygears_sdio_fpga.c	/^static struct class* heygears_class = 0;    \/* 新的设备类 *\/$/;"	v	typeref:struct:class	file:
+heygears_dev	heygears_sdio_fpga.c	/^static dev_t heygears_dev = 0;              \/* 设备编号 *\/$/;"	v	file:
+hg_ntc_open	heygears_lradc_ntc.c	/^static int hg_ntc_open(struct inode *inode, struct file *filp)$/;"	f	file:
+hg_ntc_ops	heygears_lradc_ntc.c	/^static const struct file_operations hg_ntc_ops = {$/;"	v	typeref:struct:file_operations	file:
+hg_ntc_read	heygears_lradc_ntc.c	/^static ssize_t hg_ntc_read(struct file *filp, char __user *buf, size_t cnt, loff_t *off)$/;"	f	file:
+hg_ntc_release	heygears_lradc_ntc.c	/^static int hg_ntc_release(struct inode *inode, struct file *filp)$/;"	f	file:
+id	goodix.c	/^	u16 id;$/;"	m	struct:goodix_ts_data	file:
+id	goodix.c	/^    const struct i2c_device_id *id;$/;"	m	struct:goodix_ts_work	typeref:struct:goodix_ts_work::i2c_device_id	file:
+in_sdio_uart_irq	heygears_sdio_fpga.c	/^    struct task_struct* in_sdio_uart_irq;$/;"	m	struct:sdio_uart_port	typeref:struct:sdio_uart_port::task_struct	file:
+index	heygears_sdio_fpga.c	/^    unsigned int		index;$/;"	m	struct:sdio_uart_port	file:
+init	heygears_spi_fpga.h	/^    unsigned long   init;$/;"	m	struct:spi_fpga_gpio
+input_dev	goodix.c	/^	struct input_dev *input_dev;$/;"	m	struct:goodix_ts_data	typeref:struct:goodix_ts_data::input_dev	file:
+int_mode	heygears_lradc.h	/^enum int_mode {$/;"	g
+int_trigger_type	goodix.c	/^	unsigned int int_trigger_type;$/;"	m	struct:goodix_ts_data	file:
+inverted_x	goodix.c	/^	bool inverted_x;$/;"	m	struct:goodix_ts_data	file:
+inverted_y	goodix.c	/^	bool inverted_y;$/;"	m	struct:goodix_ts_data	file:
+irq_flags	goodix.c	/^	unsigned long irq_flags;$/;"	m	struct:goodix_ts_data	file:
+irq_num	heygears_lradc_ntc.c	/^	int irq_num;$/;"	m	struct:sunxi_ntc_data	file:
+key_mode	heygears_lradc.h	/^enum key_mode {$/;"	g
+magic	heygears_sdio_fpga.c	/^    uint32_t            magic;$/;"	m	struct:sdio_uart_port	file:
+major	heygears_fpga_cmd.c	/^    int major;					\/* 主设备号 *\/$/;"	m	struct:__anon1	file:
+major	heygears_spi_fpga.c	/^    int major;$/;"	m	struct:spi_fpga_dev	file:
+map_fault	heygears_sdio_fpga.c	/^int map_fault(struct vm_area_struct *vma, struct vm_fault *vmf)$/;"	f
+map_vclose	heygears_sdio_fpga.c	/^void map_vclose(struct vm_area_struct *vma)$/;"	f
+map_vm_ops	heygears_sdio_fpga.c	/^static struct vm_operations_struct map_vm_ops = {$/;"	v	typeref:struct:vm_operations_struct	file:
+map_vopen	heygears_sdio_fpga.c	/^void map_vopen(struct vm_area_struct *vma)$/;"	f
+max_touch_num	goodix.c	/^	unsigned int max_touch_num;$/;"	m	struct:goodix_ts_data	file:
+mclk	heygears_lradc_ntc.c	/^	struct clk *mclk;$/;"	m	struct:sunxi_ntc_data	typeref:struct:sunxi_ntc_data::clk	file:
+measure	heygears_lradc.h	/^	u32 measure;$/;"	m	struct:sunxi_adc_disc
+miso	heygears_spi_fpga.h	/^    unsigned long   miso;$/;"	m	struct:spi_fpga_gpio
+mosi	heygears_spi_fpga.h	/^    unsigned long   mosi;$/;"	m	struct:spi_fpga_gpio
+ncs	heygears_spi_fpga.h	/^    unsigned long   ncs;$/;"	m	struct:spi_fpga_gpio
+nd	heygears_fpga_cmd.c	/^    struct device_node* nd; 	\/* 设备节点 *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::device_node	file:
+ntc_ctrl_set	heygears_lradc_ntc.c	/^static void ntc_ctrl_set(void __iomem *reg_base,$/;"	f	file:
+obj-m	Makefile	/^obj-m :=$(TARGET).o$/;"	m
+pclk	heygears_lradc_ntc.c	/^	struct clk *pclk;$/;"	m	struct:sunxi_ntc_data	typeref:struct:sunxi_ntc_data::clk	file:
+pdev	heygears_lradc_ntc.c	/^	struct platform_device	*pdev;$/;"	m	struct:sunxi_ntc_data	typeref:struct:sunxi_ntc_data::platform_device	file:
+pdev	heygears_spi_fpga.c	/^    struct platform_device *pdev;$/;"	m	struct:spi_fpga_dev	typeref:struct:spi_fpga_dev::platform_device	file:
+power	heygears_spi_fpga.h	/^    unsigned long   power;$/;"	m	struct:spi_fpga_gpio
+private_data	heygears_fpga_cmd.c	/^    void* private_data;			\/* 私有数据 *\/$/;"	m	struct:__anon1	file:
+prog	heygears_spi_fpga.h	/^    unsigned long   prog;$/;"	m	struct:spi_fpga_gpio
+read_fifo	heygears_sdio_fpga.c	/^    struct kfifo		read_fifo;$/;"	m	struct:sdio_uart_port	typeref:struct:sdio_uart_port::kfifo	file:
+reg_base	heygears_lradc_ntc.c	/^	void __iomem *reg_base;$/;"	m	struct:sunxi_ntc_data	file:
+resol	heygears_lradc.h	/^	u32 resol;$/;"	m	struct:sunxi_adc_disc
+rotated_screen	goodix.c	/^static const struct dmi_system_id rotated_screen[] = {$/;"	v	typeref:struct:dmi_system_id	file:
+sck	heygears_spi_fpga.h	/^    unsigned long   sck;$/;"	m	struct:spi_fpga_gpio
+sdio_file_close	heygears_sdio_fpga.c	/^static int sdio_file_close(struct inode* inode, struct file* file)$/;"	f	file:
+sdio_file_mmap	heygears_sdio_fpga.c	/^static int sdio_file_mmap(struct file *file,struct vm_area_struct *vma)$/;"	f	file:
+sdio_file_open	heygears_sdio_fpga.c	/^static int sdio_file_open(struct inode* inode, struct file* file)$/;"	f	file:
+sdio_file_read	heygears_sdio_fpga.c	/^static ssize_t sdio_file_read(struct file* file, char __user* buf, size_t len, loff_t* off)$/;"	f	file:
+sdio_file_write	heygears_sdio_fpga.c	/^static ssize_t sdio_file_write($/;"	f	file:
+sdio_in	heygears_sdio_fpga.c	/^static inline u8 sdio_in(struct sdio_uart_port* port, int offset)$/;"	f	file:
+sdio_out	heygears_sdio_fpga.c	/^static inline void sdio_out(struct sdio_uart_port* port, int offset, u8 value)$/;"	f	file:
+sdio_receive_inline	heygears_sdio_fpga.c	/^static int sdio_receive_inline(struct sdio_func* func, char* buf, int size)$/;"	f	file:
+sdio_uart_activate	heygears_sdio_fpga.c	/^static int sdio_uart_activate(struct sdio_uart_port* port)$/;"	f	file:
+sdio_uart_add_port	heygears_sdio_fpga.c	/^static int sdio_uart_add_port(struct sdio_uart_port* port)$/;"	f	file:
+sdio_uart_claim_func	heygears_sdio_fpga.c	/^static int sdio_uart_claim_func(struct sdio_uart_port* port)$/;"	f	file:
+sdio_uart_driver	heygears_sdio_fpga.c	/^static struct sdio_driver sdio_uart_driver = {$/;"	v	typeref:struct:sdio_driver	file:
+sdio_uart_exit	heygears_sdio_fpga.c	/^module_exit(sdio_uart_exit);$/;"	v
+sdio_uart_exit	heygears_sdio_fpga.c	/^static void __exit sdio_uart_exit(void)$/;"	f	file:
+sdio_uart_ids	heygears_sdio_fpga.c	/^static const struct sdio_device_id sdio_uart_ids[] = {$/;"	v	typeref:struct:sdio_device_id	file:
+sdio_uart_init	heygears_sdio_fpga.c	/^module_init(sdio_uart_init);$/;"	v
+sdio_uart_init	heygears_sdio_fpga.c	/^static int __init sdio_uart_init(void)$/;"	f	file:
+sdio_uart_irq	heygears_sdio_fpga.c	/^static void sdio_uart_irq(struct sdio_func* func)$/;"	f	file:
+sdio_uart_port	heygears_sdio_fpga.c	/^struct sdio_uart_port {$/;"	s	file:
+sdio_uart_port_remove	heygears_sdio_fpga.c	/^static void sdio_uart_port_remove(struct sdio_uart_port* port)$/;"	f	file:
+sdio_uart_probe	heygears_sdio_fpga.c	/^static int sdio_uart_probe(struct sdio_func* func,$/;"	f	file:
+sdio_uart_proc_fops	heygears_sdio_fpga.c	/^static const struct file_operations sdio_uart_proc_fops = {$/;"	v	typeref:struct:file_operations	file:
+sdio_uart_read	heygears_sdio_fpga.c	/^static int sdio_uart_read(struct sdio_uart_port* port, char* buf, int count)$/;"	f	file:
+sdio_uart_release_func	heygears_sdio_fpga.c	/^static inline void sdio_uart_release_func(struct sdio_uart_port* port)$/;"	f	file:
+sdio_uart_remove	heygears_sdio_fpga.c	/^static void sdio_uart_remove(struct sdio_func* func)$/;"	f	file:
+sdio_uart_shutdown	heygears_sdio_fpga.c	/^static void sdio_uart_shutdown(struct sdio_uart_port* port)$/;"	f	file:
+sdio_uart_table	heygears_sdio_fpga.c	/^static struct sdio_uart_port* sdio_uart_table[UART_NR];$/;"	v	typeref:struct:sdio_uart_port	file:
+sdio_uart_write	heygears_sdio_fpga.c	/^static int sdio_uart_write(struct sdio_uart_port* port, const char* buf,$/;"	f	file:
+sdio_write_inline	heygears_sdio_fpga.c	/^static int sdio_write_inline(struct sdio_func* func, const char* buf, int size)$/;"	f	file:
+setmosi	heygears_spi_fpga.c	/^static inline void setmosi(struct spi_fpga_gpio *spi_gpios, int is_on)$/;"	f	file:
+setsck	heygears_spi_fpga.c	/^static inline void setsck(struct spi_fpga_gpio *spi_gpios, int is_on)$/;"	f	file:
+spi_chipselect	heygears_spi_fpga.c	/^static inline void spi_chipselect(struct spi_fpga_gpio *spi_gpios, int is_select)$/;"	f	file:
+spi_fpga	heygears_spi_fpga.c	/^struct spi_fpga_dev *spi_fpga = NULL;$/;"	v	typeref:struct:spi_fpga_dev
+spi_fpga_alloc	heygears_spi_fpga.c	/^static int spi_fpga_alloc(unsigned pin, const char *label, bool is_in)$/;"	f	file:
+spi_fpga_dev	heygears_spi_fpga.c	/^struct spi_fpga_dev {$/;"	s	file:
+spi_fpga_driver	heygears_spi_fpga.c	/^static struct platform_driver spi_fpga_driver = {$/;"	v	typeref:struct:platform_driver	file:
+spi_fpga_driver_exit	heygears_spi_fpga.c	/^module_exit(spi_fpga_driver_exit);$/;"	v
+spi_fpga_driver_exit	heygears_spi_fpga.c	/^static void __exit spi_fpga_driver_exit(void)$/;"	f	file:
+spi_fpga_driver_init	heygears_spi_fpga.c	/^module_init(spi_fpga_driver_init);$/;"	v
+spi_fpga_driver_init	heygears_spi_fpga.c	/^static int __init spi_fpga_driver_init(void)$/;"	f	file:
+spi_fpga_dt_ids	heygears_spi_fpga.c	/^static const struct of_device_id spi_fpga_dt_ids[] = {$/;"	v	typeref:struct:of_device_id	file:
+spi_fpga_free	heygears_spi_fpga.c	/^static int spi_fpga_free(struct spi_fpga_gpio *spi_gpios)$/;"	f	file:
+spi_fpga_gpio	heygears_spi_fpga.h	/^struct spi_fpga_gpio {$/;"	s
+spi_fpga_probe	heygears_spi_fpga.c	/^static int spi_fpga_probe(struct platform_device *pdev)$/;"	f	file:
+spi_fpga_probe_dt	heygears_spi_fpga.c	/^static inline int spi_fpga_probe_dt(struct platform_device *pdev)$/;"	f	file:
+spi_fpga_probe_dt	heygears_spi_fpga.c	/^static int spi_fpga_probe_dt(struct platform_device *pdev)$/;"	f	file:
+spi_fpga_remove	heygears_spi_fpga.c	/^static int spi_fpga_remove(struct platform_device *pdev)$/;"	f	file:
+spi_fpga_request	heygears_spi_fpga.c	/^static int spi_fpga_request(struct spi_fpga_gpio *spi_gpios,$/;"	f	file:
+spi_fpga_trans	heygears_spi_fpga.c	/^int spi_fpga_trans(struct spi_fpga_dev *spi_fpga, u8 cmd, u8 *trans_data, unsigned long len, uint32_t delay_ms)$/;"	f
+spi_fpga_trans_active	heygears_spi_fpga.c	/^int spi_fpga_trans_active(struct spi_fpga_dev *spi_fpga, u8 *trans_data, unsigned long len)$/;"	f
+spi_fpga_write_cmd	heygears_spi_fpga.c	/^static int spi_fpga_write_cmd(struct spi_fpga_gpio *spi_gpios, uint8_t data_out)$/;"	f	file:
+spi_fpga_write_data	heygears_spi_fpga.c	/^static int spi_fpga_write_data(struct spi_fpga_gpio *spi_gpios, uint8_t data_out)$/;"	f	file:
+spi_fpga_write_operand	heygears_spi_fpga.c	/^static int spi_fpga_write_operand(struct spi_fpga_gpio *spi_gpios)$/;"	f	file:
+spi_gpios	heygears_spi_fpga.c	/^    struct spi_fpga_gpio *spi_gpios;$/;"	m	struct:spi_fpga_dev	typeref:struct:spi_fpga_dev::spi_fpga_gpio	file:
+spi_read_halfword_regs	heygears_fpga_cmd.c	/^static int spi_read_halfword_regs(fpga_cmd_dev_t* dev, uint8_t reg, void* buf, int len)$/;"	f	file:
+spi_update_completion	heygears_spi_fpga.c	/^DECLARE_COMPLETION(spi_update_completion); \/\/静态创建一个和初始化一个完成量。$/;"	v
+spi_update_completion	heygears_spi_fpga.c	/^EXPORT_SYMBOL_GPL(spi_update_completion); \/\/导出完成量符号表给sdio_fpga使用$/;"	v
+spi_write_halfword_regs	heygears_fpga_cmd.c	/^static int spi_write_halfword_regs(fpga_cmd_dev_t* dev, uint8_t reg, void* buf, int len)$/;"	f	file:
+status	heygears_spi_fpga.c	/^fpga_update_status status;$/;"	v
+status_lock	heygears_spi_fpga.c	/^static struct  mutex status_lock;$/;"	v	typeref:struct:mutex	file:
+sunxi_adc_disc	heygears_lradc.h	/^struct sunxi_adc_disc {$/;"	s
+sunxi_isr_ntc	heygears_lradc_ntc.c	/^static irqreturn_t sunxi_isr_ntc(int irq, void *dummy)$/;"	f	file:
+sunxi_ntc_clr_ints	heygears_lradc_ntc.c	/^static void sunxi_ntc_clr_ints(void __iomem *reg_base, u32 reg_val)$/;"	f	file:
+sunxi_ntc_data	heygears_lradc_ntc.c	/^struct sunxi_ntc_data {$/;"	s	file:
+sunxi_ntc_driver	heygears_lradc_ntc.c	/^module_platform_driver(sunxi_ntc_driver);$/;"	v
+sunxi_ntc_driver	heygears_lradc_ntc.c	/^static struct platform_driver sunxi_ntc_driver = {$/;"	v	typeref:struct:platform_driver	file:
+sunxi_ntc_int_set	heygears_lradc_ntc.c	/^static void sunxi_ntc_int_set(void __iomem *reg_base,$/;"	f	file:
+sunxi_ntc_of_match	heygears_lradc_ntc.c	/^static struct of_device_id const sunxi_ntc_of_match[] = {$/;"	v	file:
+sunxi_ntc_pm_ops	heygears_lradc_ntc.c	/^static const struct dev_pm_ops sunxi_ntc_pm_ops = {$/;"	v	typeref:struct:dev_pm_ops	file:
+sunxi_ntc_probe	heygears_lradc_ntc.c	/^static int sunxi_ntc_probe(struct platform_device *pdev)$/;"	f	file:
+sunxi_ntc_probe_dt	heygears_lradc_ntc.c	/^static int sunxi_ntc_probe_dt(struct sunxi_ntc_data *ntc_data,$/;"	f	file:
+sunxi_ntc_read_data	heygears_lradc_ntc.c	/^static u32 sunxi_ntc_read_data(void __iomem *reg_base)$/;"	f	file:
+sunxi_ntc_read_ints	heygears_lradc_ntc.c	/^static u32 sunxi_ntc_read_ints(void __iomem *reg_base)$/;"	f	file:
+sunxi_ntc_remove	heygears_lradc_ntc.c	/^static int sunxi_ntc_remove(struct platform_device *pdev)$/;"	f	file:
+sunxi_ntc_resume	heygears_lradc_ntc.c	/^static int sunxi_ntc_resume(struct device *dev)$/;"	f	file:
+sunxi_ntc_suspend	heygears_lradc_ntc.c	/^static int sunxi_ntc_suspend(struct device *dev)$/;"	f	file:
+swapped_x_y	goodix.c	/^	bool swapped_x_y;$/;"	m	struct:goodix_ts_data	file:
+tswork	goodix.c	/^struct goodix_ts_work tswork;$/;"	v	typeref:struct:goodix_ts_work
+update_fpga_fw	heygears_spi_fpga.c	/^static int update_fpga_fw(struct spi_fpga_dev *spi_fpga, const struct firmware *fw)$/;"	f	file:
+update_fw_store	heygears_spi_fpga.c	/^static ssize_t update_fw_store(struct device *dev,$/;"	f	file:
+update_start_up	heygears_spi_fpga.c	/^static void update_start_up(struct spi_fpga_dev *spi_fpga)$/;"	f	file:
+version	goodix.c	/^	u16 version;$/;"	m	struct:goodix_ts_data	file:
+vmalloc_area	heygears_sdio_fpga.c	/^static char *vmalloc_area = NULL;$/;"	v	file:
+work	goodix.c	/^    struct work_struct work;$/;"	m	struct:goodix_ts_work	typeref:struct:goodix_ts_work::work_struct	file:
+work	heygears_spi_fpga.c	/^    struct work_struct work;$/;"	m	struct:spi_fpga_dev	typeref:struct:spi_fpga_dev::work_struct	file:
+work_func	heygears_spi_fpga.c	/^static void work_func(struct work_struct *work)$/;"	f	file:
+work_func_flags	heygears_spi_fpga.c	/^    bool   work_func_flags;$/;"	m	struct:spi_fpga_dev	file:
+write_lock	heygears_sdio_fpga.c	/^    spinlock_t		write_lock; \/\/actually read\/write lock$/;"	m	struct:sdio_uart_port	file:
+xmit_fifo	heygears_sdio_fpga.c	/^    struct kfifo		xmit_fifo;$/;"	m	struct:sdio_uart_port	typeref:struct:sdio_uart_port::kfifo	file:

@@ -1,0 +1,1 @@
+cmd_/home/rk3399/learn/driver/heygears_spi_fpga.ko := aarch64-linux-gnu-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/rk3399/learn/driver/heygears_spi_fpga.ko /home/rk3399/learn/driver/heygears_spi_fpga.o /home/rk3399/learn/driver/heygears_spi_fpga.mod.o ;  true

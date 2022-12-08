@@ -1,0 +1,1 @@
+cmd_/home/rk3399/learn/linux_learn/timelist/timelist.ko := aarch64-linux-gnu-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/rk3399/learn/linux_learn/timelist/timelist.ko /home/rk3399/learn/linux_learn/timelist/timelist.o /home/rk3399/learn/linux_learn/timelist/timelist.mod.o ;  true

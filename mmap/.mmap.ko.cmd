@@ -1,0 +1,1 @@
+cmd_/home/rk3399/learn/mmap/mmap.ko := aarch64-linux-gnu-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/rk3399/learn/mmap/mmap.ko /home/rk3399/learn/mmap/mmap.o /home/rk3399/learn/mmap/mmap.mod.o ;  true

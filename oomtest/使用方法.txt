@@ -1,0 +1,4 @@
+
+安装libvalgrind
+dpkg安装libc6
+https://www.cnblogs.com/luosongchao/p/3664628.html

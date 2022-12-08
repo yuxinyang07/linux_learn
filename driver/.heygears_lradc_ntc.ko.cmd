@@ -1,0 +1,1 @@
+cmd_drivers/heygears/heygears_lradc_ntc.ko := aarch64-openwrt-linux-gnu-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/heygears/heygears_lradc_ntc.ko drivers/heygears/heygears_lradc_ntc.o drivers/heygears/heygears_lradc_ntc.mod.o ;  true

@@ -19,11 +19,11 @@
 #include <asm/unaligned.h>
 #include <asm/uaccess.h>
 #include <linux/namei.h>
+#include <linux/platform_device.h>
 
 
 
-
-static int  input_test_probe(struct i2c_client * client,const struct i2c_device_id * devid)
+static int  input_test_probe(struct platform_device * dev)
 {
     
     return 0;
@@ -31,7 +31,7 @@ static int  input_test_probe(struct i2c_client * client,const struct i2c_device_
 
 
 
-static int input_test_remove(struct i2c_client *client)
+static int input_test_remove(struct platform_device *dev)
 {
     return 0;
 }
@@ -41,7 +41,7 @@ static int input_test_remove(struct i2c_client *client)
 
 
 static const  struct of_device_id  input_test_match[] ={
-    {"input_test"},
+    {"key_input"},
     {}
 };
 
@@ -52,11 +52,11 @@ static const  struct of_device_id  input_test_match[] ={
 
 
 
-struct i2c_driver input_driver = {
+static struct platform_driver key_input = {
     .probe = input_test_probe,
     .remove = input_test_remove,
     .driver = {
-        .name = "input_test",
+        .name = "key_input",
         .of_match_table = of_match_ptr(input_test_match),
     },
 };
@@ -71,8 +71,7 @@ struct i2c_driver input_driver = {
 
 
 
-module_i2c_driver(input_driver);
 
-
+module_platform_driver(key_input)
 
 MODULE_LICENSE("GPL");

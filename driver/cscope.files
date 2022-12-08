@@ -1,0 +1,12 @@
+goodix.c
+goodix.mod.c
+heygears_fpga_cmd.c
+heygears_fpga_cmd.mod.c
+heygears_lradc.h
+heygears_lradc_ntc.c
+heygears_lradc_ntc.mod.c
+heygears_sdio_fpga.c
+heygears_sdio_fpga.mod.c
+heygears_spi_fpga.c
+heygears_spi_fpga.h
+heygears_spi_fpga.mod.c
