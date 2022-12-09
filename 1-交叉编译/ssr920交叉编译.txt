@@ -1,0 +1,1 @@
+./configure --host=arm-linux CC=/home/rk3399/work/SSR920/gcc-sigmastar-9.1.0-2020.07-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc --with-zlib=no --with-bzip2=no --with-png=no --with-harfbuzz=no   --prefix=/home/rk3399/work/SSR920/lib --with-sysroot=/home/rk3399/work/SSR920/rootfs
