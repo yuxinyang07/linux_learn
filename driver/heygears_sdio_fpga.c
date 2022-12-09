@@ -22,6 +22,12 @@
 
 #define MAP_PAGE_COUNT 5064
 #define MAPLEN  (PAGE_SIZE*MAP_PAGE_COUNT)
+#define BYTE_ALIGN(x)  (((x +(4 *1024 -1))>>12) << 12)  //4K字节对齐
+
+
+
+//#define FPGA_DMA_ALLOC 
+#define FPGA_VMALLOC 
 
 extern void sunxi_mmc_rescan_card(unsigned ids);
 
@@ -45,6 +51,9 @@ void map_vopen(struct vm_area_struct *vma);
 void map_vclose(struct vm_area_struct *vma);
 int map_fault(struct vm_area_struct *vma, struct vm_fault *vmf);
 static char *vmalloc_area = NULL;
+static unsigned long phy_addr;
+
+static char *buff;
 
 /* SDIO UART Port struct */
 struct sdio_uart_port {
@@ -97,7 +106,7 @@ int map_fault(struct vm_area_struct *vma, struct vm_fault *vmf)
     page = vmalloc_to_page(page_ptr);
     get_page(page);
     vmf->page = page;
-   // printk("%s ,map 0x%lx (0x%016lx) to 0x%lx , size: 0x%lx ,page:%ld \n",__func__,virt_start,pfn_start << PAGE_SHIFT,(unsigned long)vmf->virtual_address,PAGE_SIZE,vmf->pgoff);
+    printk("%s ,map 0x%lx (0x%016lx) to 0x%lx , size: 0x%lx ,page:%ld \n",__func__,virt_start,pfn_start << PAGE_SHIFT,(unsigned long)vmf->virtual_address,PAGE_SIZE,vmf->pgoff);
     return 0;
 }
 
@@ -108,6 +117,34 @@ static struct vm_operations_struct map_vm_ops = {
     .fault = map_fault,
 };
 
+
+#ifdef FPGA_DMA_ALLOC 
+#define BYTE_ALIGN(x)  (((x +(4 *1024 -1))>>12) << 12)
+
+void *fpga_dma_malloc(struct device dev,u32 actual_bytes,void *phys_addr)
+{
+    u32 actual_bytes;
+    void *address= NULL ;
+    if(actual_bytes != 0){
+        address = dma_alloc_coherent(dev,actual_bytes,(dma_addr_t *)phys_addr,GFP_KERNEL);
+        if(address){
+            printk(" dma alloc coherent ok  ,return address = %p size= 0x%x \n",
+                  (void *)(*(unsigned long *)phys_addr),num_bytes);
+            return address;
+        }else{
+            printk("dma_allco_coherent faild  \n ");
+            return NULL;
+        }
+    }else{
+            printk(" size is zero \n");
+
+    }
+
+    return NULL;
+
+
+}
+#endif
 
 static int sdio_uart_add_port(struct sdio_uart_port* port)
 {
@@ -367,6 +404,7 @@ static int sdio_uart_read(struct sdio_uart_port* port, char* buf, int count)
 
 static int sdio_file_open(struct inode* inode, struct file* file)
 {
+
     if (debug_info)pr_info("SDIO Driver: open()\n");
     struct sdio_uart_port* port;
     port = container_of(inode->i_cdev, struct sdio_uart_port, c_dev);
@@ -471,6 +509,7 @@ static ssize_t sdio_file_write(
 
 static int sdio_file_mmap(struct file *file,struct vm_area_struct *vma)
 {
+#if 0
     unsigned long offset = vma->vm_pgoff << PAGE_SHIFT;
     unsigned long size = vma->vm_end - vma->vm_start;
     if(size > MAPLEN){
@@ -490,11 +529,18 @@ static int sdio_file_mmap(struct file *file,struct vm_area_struct *vma)
         return -ENXIO;
     }
     return 0;
+
+#endif
+    int ret ;
+    ret =   remap_pfn_range(vma,vma->vm_start,virt_to_phys(buff) >> PAGE_SHIFT,PAGE_SIZE,vma->vm_page_prot);
+    return ret ;
+
 }
 //构造ioctl命令参数
 #define HEYGEARS_FPGA_SDIO 'h' //魔数
 #define FPGA_SDIO_WRITE   _IOWR(HEYGEARS_FPGA_SDIO,0x1010,unsigned long)
 #define FPGA_SDIO_READ    _IOWR(HEYGEARS_FPGA_SDIO,0x1011,unsigned long)
+#define FPGA_MEM_ALLOC    _IOWR(HEYGEARS_FPGA_SDIO,0x1012,unsigned long)
 #define WRITE_SIZE 6144
 static long sdio_fpga_ioctl(struct file *fp, unsigned int cmd , unsigned long arg)
 {
@@ -503,7 +549,9 @@ static long sdio_fpga_ioctl(struct file *fp, unsigned int cmd , unsigned long ar
     struct sdio_uart_port* port = fp->private_data;
     unsigned long offset = 0;
     unsigned long len = arg;
-     unsigned long len_write;
+    unsigned long len_write;
+    unsigned long  virt_addr;
+    unsigned long actual_bytes = 0;
     if(!port->func)
         return ENXIO;
  
@@ -530,6 +578,26 @@ static long sdio_fpga_ioctl(struct file *fp, unsigned int cmd , unsigned long ar
         }
         break;
         case FPGA_SDIO_READ:
+        break;
+        case FPGA_MEM_ALLOC:
+
+#ifdef FPGA_VMALLOC 
+            vmalloc_area = vmalloc(len);
+            actual_bytes = BYTE_ALIGN(len);
+            printk("actual_byte =l%d  len = %ld \n",actual_bytes,len);
+            virt_addr = (unsigned long)vmalloc_area;
+            for(virt_addr =(unsigned long )vmalloc_area ; virt_addr < (unsigned long)vmalloc_area + (actual_bytes >> 12) ; virt_addr += PAGE_SIZE){
+                SetPageReserved(vmalloc_to_page((void *)virt_addr));
+            }
+#endif
+#ifdef FPGA_DMA_ALLOC
+            of_dma_confgure(port->dev,port->dev->of_node);
+            virt_addr = fpga_dma_malloc( port->dev,actual_bytes ,phy_addr);
+                  
+
+#endif
+
+      
         break;
         default:
             printk("no cmd\n");
@@ -558,12 +626,13 @@ static int sdio_uart_probe(struct sdio_func* func,
     int ret;
     struct sdio_uart_port* port;
     dev_t dev_idx;
-    unsigned long  virt_addr;
-    vmalloc_area = vmalloc(MAPLEN);
-    virt_addr = (unsigned long)vmalloc_area;
-    for(virt_addr =(unsigned long )vmalloc_area ; virt_addr < (unsigned long)vmalloc_area + MAPLEN ; virt_addr += PAGE_SIZE){
-        SetPageReserved(vmalloc_to_page((void *)virt_addr));
+    buff = (char *)__get_free_page(GFP_KERNEL);
+    if(buff ==NULL){
+        printk("get free page failed \n");
+        return -1;
     }
+    
+
     /* 内存申请 */
     port = kzalloc(sizeof(struct sdio_uart_port), GFP_KERNEL);
     if (!port)
@@ -580,7 +649,7 @@ static int sdio_uart_probe(struct sdio_func* func,
         ret = -EINVAL;
         goto err1;
     }
-
+    
     port->func = func;
     sdio_set_drvdata(func, port);
 
@@ -657,7 +726,7 @@ static int __init sdio_uart_init(void)
     int ret = 0;
     printk(KERN_WARNING "sdio_uart_init!\n");
     if (debug_info)pr_warn("sdio_uart_init start\n");
- //   wait_for_completion(&spi_update_completion);
+   wait_for_completion(&spi_update_completion);
     /* 触发一次sdio检卡，bus_num=1 */
     sunxi_mmc_rescan_card(HEYGEARS_SDIO_BUS_NUM);
     
